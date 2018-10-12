@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'National Basketball Asociation';
+  valor: number;
+
+  constructor() {
+    this.valor = 0;
+  }
+
+  aumentarValor() {
+    if (this.valor < 2) {
+      this.valor += 1;
+    }
+  }
+
+  disminutirValor() {
+    if (this.valor > 0) {
+      this.valor -= 1;
+    }
+  }
 }

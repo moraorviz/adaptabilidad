@@ -1,3 +1,6 @@
+body {
+  width: 90%;
+  margin: 0 auto;}
 
 #content {overflow: auto;}
 
@@ -23,3 +26,7 @@ li {
   height: 10em;
   margin-bottom: 1em;
   background-color: #efefef;}
+
+#btnext {
+  float: right;
+}

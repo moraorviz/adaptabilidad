@@ -3,11 +3,13 @@ import { LOCALE_ID, NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ActividadesCiclicasComponent } from './actividades-ciclicas/actividades-ciclicas.component';
+import { NoticiaComponent } from './noticia/noticia.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ActividadesCiclicasComponent
+    ActividadesCiclicasComponent,
+    NoticiaComponent,
   ],
   imports: [
     BrowserModule
