@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Elemento } from '../elemento';
+import { ELEMENTOS } from '../lista-elementos';
 
 @Component({
   selector: 'app-top-menu',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopMenuComponent implements OnInit {
 
+  elementos = ELEMENTOS;
+
+  elementoElegido: Elemento;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  onSelect(elemento: Elemento): void {
+    this.elementoElegido = elemento;
+  }
 }

@@ -5,16 +5,20 @@ import { AppComponent } from './app.component';
 import { TopMenuComponent } from './top-menu/top-menu.component';
 import { AppRoutingModule } from './app-routing.module';
 import { JugadoresComponent } from './jugadores/jugadores.component';
+import { HomeComponent } from './home/home.component';
+import { BuscadorComponent } from './buscador/buscador.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopMenuComponent,
-    JugadoresComponent
+    JugadoresComponent,
+    HomeComponent,
+    BuscadorComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,21 @@
-<p>
-  top-menu works!
-</p>
+
+<div class="elementos">
+  <div class="ui five item menu">
+  <a *ngFor="let elemento of elementos" class="item"
+    [class.active]="elemento === elementoElegido"
+    (click)="onSelect(elemento)">
+    {{elemento.nombre}}
+</a>
+</div>
+</div>
+
+
+
+
+<!-- <div class="ui five item menu">
+  <a class="item" routerLink="home">Inicio</a>
+  <a class="item" routerLink="jugadores">Jugadores</a>
+  <a class="item" routerLink="equipos">Equipos</a>
+  <a class="item" routerLink="acerca">Acerca de</a>
+  <app-buscador></app-buscador>
+</div> -->
